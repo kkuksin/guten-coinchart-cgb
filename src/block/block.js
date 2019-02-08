@@ -148,7 +148,7 @@ class Inspector extends Component {
 					colorSettings={[{
 						value: background_color,
 						colors: backgroundColors,
-						onChange: (value) => setAttributes({background_color: value}),
+						onChange: (value) => setAttributes({background_color: value || 'white'}),
 						label: __('Block Background Color'),
 
 					}]}
@@ -159,7 +159,7 @@ class Inspector extends Component {
 					colorSettings={[{
 						value: text_color,
 						colors: backgroundColors,
-						onChange: (value) => setAttributes({text_color: value}),
+						onChange: (value) => setAttributes({text_color: value || 'black'}),
 						label: __('Block Title Color'),
 
 					}]}
